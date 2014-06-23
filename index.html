@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Aqui Perto!</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="App para listar lugares por categorias">
+    <meta name="author" content="Adriano Brito">
+   <!--  <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png"> -->
+    
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.css" rel="stylesheet">
+	<style type="text/css">
+		body{
+			padding-top: 60px;
+		}
+	</style>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/core.js"></script>
+</head>
+
+<body>
+
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Aqui Perto!</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          
+        </div>
+      </div>
+    </div>
+
+	<div class="container main">
+
+		<div class="list-group">
+		  <a href="javascript: go_to('lugares.html', 'categoria=food,restaurant,grocery_or_supermarket&descricao=Alimentação');" class="list-group-item"> <img src="img/food.svg" width="32"/> Alimentação</a>
+		  <a href="javascript: go_to('lugares.html', 'categoria=gas_station&descricao=Combustível');" class="list-group-item"> <img src="img/gas.svg" width="32"/> Combustivel</a>
+		  <a href="javascript: go_to('lugares.html', 'categoria=bar,night_club&descricao=Diversão');" class="list-group-item"> <img src="img/party.png" width="32"/> Diversão</a>
+		  <a href="javascript: go_to('lugares.html', 'categoria=healthy,hospital,pharmacy,doctor&descricao=Saúde');" class="list-group-item"> <img src="img/health.png" width="32"/> Saúde</a>
+		  <a href="javascript: go_to('lugares.html', 'categoria=art_gallery,museum,movie_theater&descricao=Cultura');" class="list-group-item"> <img src="img/art.png" width="32"/> Cultura</a>
+		  <a href="javascript: go_to('lugares.html', 'categoria=beauty_salon&descricao=Beleza');" class="list-group-item"> <img src="img/hair.png" width="32"/> Beleza</a>
+		</div>
+
+	</div>
+
+</body>
+
+</html>
