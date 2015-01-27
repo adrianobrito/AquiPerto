@@ -219,7 +219,7 @@ function listar_lugares(result, status){
             var link = $('<a/>'); link.addClass('list-group-item'); 
             localStorage.setItem('back', localStorage.getItem('query_string'));
             link.attr('href','javascript:go_to("mapa.html","x=' + x + '&y=' + y + '&d_x=' + place.geometry.location.k + 
-                      '&d_y=' + place.geometry.location.A + '&name=' + place.name + '&vicinity=' + place.vicinity +
+                      '&d_y=' + place.geometry.location.D + '&name=' + place.name + '&vicinity=' + place.vicinity +
                       '&icon=' + place.icon + '")');
             
             var h4 = $('<h4/>').text(place.name);
