@@ -221,7 +221,7 @@ function listar_lugares(result, status){
             console.log("Coordenadas: " +  place.geometry.location.D + ", " +  place.geometry.location.k);
             console.log(place.geometry.location);
             link.attr('href','javascript:go_to("mapa.html","x=' + x + '&y=' + y + '&d_x=' + place.geometry.location.lat() + 
-                      '&d_y=' + place.geometry.location.long() + '&name=' + place.name + '&vicinity=' + place.vicinity +
+                      '&d_y=' + place.geometry.location.lng() + '&name=' + place.name + '&vicinity=' + place.vicinity +
                       '&icon=' + place.icon + '")');
             
             var h4 = $('<h4/>').text(place.name);
